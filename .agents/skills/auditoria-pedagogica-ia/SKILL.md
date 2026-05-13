@@ -16,7 +16,7 @@ The skill must:
 1. Read the artifact from a `.md` path inside the current repo.
 2. Audit the artifact with the rubric in `references/sesgo-pedagogico-odetti.md`.
 3. Produce a Markdown audit file inside `.auditorias_pedagogicas/` at the repo root.
-4. Use the language of the user's current request for the audit text.
+4. Use the language of the user's current request for the full audit output.
 
 ## Trigger cues
 
@@ -100,53 +100,62 @@ For each dimension, always include:
 - Focus on assumptions about teaching and learning, not only wording defects.
 - Use evidence from the artifact, quoting short excerpts when useful.
 - Keep artifact excerpts in the original artifact language when citing them.
-- Write the audit narrative in the language of the user's current request.
+- Write the entire audit in one consistent language: the language of the user's current request.
+- Translate all headings, labels, dimension names, table headers, risk levels, verdict labels, and recommendation labels into that same language.
+- Never mix template labels from different languages in the final audit.
+- Only quoted evidence from the artifact may remain in the artifact's original language.
 
 ## Required audit structure
 
-Use this exact section structure in the output audit:
+Use this exact section structure in the output audit, but localize every heading and label to the request language:
 
 ```md
-# Pedagogical Audit: <artifact title or filename>
+# <Localized title: Pedagogical Audit / Auditoria pedagogica>: <artifact title or filename>
 
-## Metadata
+## <Localized Metadata heading>
 
-- Artifact:
-- Source path:
-- Audit date:
-- Request language:
-- Audit basis:
-- Scope:
+- <Localized label for Artifact>:
+- <Localized label for Source path>:
+- <Localized label for Audit date>:
+- <Localized label for Request language>:
+- <Localized label for Audit basis>:
+- <Localized label for Scope>:
 
-## Executive Summary
+## <Localized Executive Summary heading>
 
-## Risk Summary
+## <Localized Risk Summary heading>
 
-| Dimension | Risk | Short note |
+| <Localized Dimension header> | <Localized Risk header> | <Localized Short note header> |
 | --- | --- | --- |
 
-## Findings by Dimension
+## <Localized Findings by Dimension heading>
 
-### 1. Concepcion del aprendizaje
+### 1. <Localized dimension name>
 
-**Nivel de riesgo:** ...
+**<Localized risk label>:** ...
 
-**Evidencia del artefacto:** ...
+**<Localized artifact evidence label>:** ...
 
-**Explicacion pedagogica:** ...
+**<Localized pedagogical explanation label>:** ...
 
-**Recomendacion de ajuste:** ...
+**<Localized adjustment recommendation label>:** ...
 
-### 2. Profundidad cognitiva
+### 2. <Localized dimension name>
 
 ...
 
-## Prioritized Recommendations
+## <Localized Prioritized Recommendations heading>
 
-## Critical Questions for Human Review
+## <Localized Critical Questions for Human Review heading>
 
-## Final Verdict
+## <Localized Final Verdict heading>
 ```
+
+For consistency:
+
+- if the request is in Spanish, use labels such as `Bajo`, `Medio`, `Alto` and a Spanish verdict;
+- if the request is in English, use labels such as `Low`, `Medium`, `High` and an English verdict;
+- apply the same rule to every visible label in the document.
 
 ## Critical questions
 
