@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auditoria Pedagogica IA"
+  short_description: "Critically audit AI pedagogical artifacts"
+  default_prompt: "Use $auditoria-pedagogica-ia to review critically this pedagogical artifact and produce an audit in .auditorias_pedagogicas/."
