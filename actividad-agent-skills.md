@@ -2,9 +2,9 @@
 
 ## 1. Sintesis de la propuesta
 
-Se propone una actividad de una semana, en el marco de una serie de charlas y talleres sobre IA, orientada a que las personas participantes aprendan a disenar, probar y mejorar `agent skills` aplicadas a tareas reales de una consultora de software.
+Se propone una actividad de una semana, en el marco de una serie de charlas y talleres sobre IA, orientada a que las personas participantes aprendan a disenar, probar y mejorar `agent skills` aplicadas a tareas reales de una consultora multinacional de software.
 
-La actividad se organiza como un laboratorio practico con foco en transferencia al trabajo cotidiano. En lugar de centrarse solo en "usar prompts", invita a convertir conocimiento operativo de la organizacion en procedimientos reutilizables para agentes. El producto final no es solamente una experiencia de exploracion, sino un artefacto aplicable: una skill, su documentacion de uso y una breve reflexion sobre valor, limites y condiciones de adopcion.
+La actividad se organiza como un laboratorio practico con foco en transferencia al trabajo cotidiano. En lugar de centrarse solo en "usar prompts", invita a examinar que partes del trabajo conviene convertir en procedimientos reutilizables para agentes y cuales requieren seguir dependiendo principalmente de juicio humano situado. El producto final no es solamente una experiencia de exploracion, sino un artefacto aplicable: una skill o una decision fundada de no skillificar una tarea, su documentacion de uso y una breve reflexion sobre valor, limites y condiciones de adopcion.
 
 Nombre sugerido de la actividad: **De prompt a capacidad reusable: laboratorio de agent skills**
 
@@ -50,52 +50,53 @@ Esta reflexion es especialmente importante en una consultora, donde la calidad d
 
 ## 3. Proposito formativo
 
-Que las personas participantes desarrollen capacidades iniciales para disenar y evaluar `agent skills` utiles, reutilizables y responsables, aplicadas a procesos reales de trabajo en consultoria de software.
+Que las personas participantes desarrollen capacidades iniciales para disenar y evaluar `agent skills` utiles, reutilizables y responsables, aplicadas a procesos reales de trabajo en consultoria de software, sin perder de vista los limites de la proceduralizacion y la necesidad de control humano.
 
 ## 4. Objetivos de aprendizaje
 
 Al finalizar la actividad, se espera que las personas participantes puedan:
 
 - identificar tareas o microprocesos donde una `agent skill` puede aportar valor real;
+- distinguir tareas que no conviene convertir en una skill, o que requieren mediaciones humanas fuertes;
 - traducir conocimiento tacito de trabajo en instrucciones explicitas y reutilizables;
 - probar una skill en un entorno de uso real o simulado;
 - evaluar la calidad de sus resultados segun criterios tecnicos, operativos y eticos;
-- documentar condiciones de uso, limites y recomendaciones de mejora.
+- documentar condiciones de uso, limites, controles humanos y recomendaciones de mejora.
 
 ## 5. Destinatarios y requisitos
 
 Destinatarios sugeridos:
 
-- perfiles tecnicos;
-- perfiles funcionales;
-- liderazgo de proyectos;
-- roles de QA, producto, analisis, soporte o documentacion.
+- empleados tecnicos y no tecnicos de una consultora multinacional de software;
+- perfiles de desarrollo, testing, devops, producto, analisis, soporte, documentacion, RR. HH., project management y gerencia;
+- grupos locales de entre 10 y 30 personas o cohortes regionales de entre 100 y 300 participantes, segun el formato de implementacion.
 
 Requisitos minimos:
 
 - acceso a las herramientas disponibles en la empresa: OpenAI enterprise, Codex, Windsurf y/o Copilot;
-- conocimiento basico del proceso de trabajo sobre el que se quiera intervenir;
+- conocimiento basico del proceso de trabajo sobre el que se quiera intervenir, aunque no necesariamente conocimientos previos de IA mas alla de un nivel introductorio;
 - disposicion para experimentar, documentar y revisar resultados criticamente.
 
-No se requieren conocimientos previos avanzados sobre IA, pero si resulta conveniente una charla introductoria previa sobre agentes, skills, limites y buenas practicas.
+No se requieren conocimientos previos avanzados sobre IA. Si resulta conveniente una charla introductoria previa, deberia contemplar un lenguaje claro para perfiles tecnicos y no tecnicos, y ofrecer ejemplos diferenciados segun roles.
 
 ## 6. Descripcion de la actividad
 
 ### Consigna central
 
-Cada participante o pareja debera seleccionar una tarea frecuente de la consultora que hoy demande tiempo, esfuerzo repetitivo o variabilidad innecesaria, y convertirla en una `agent skill` o en una especificacion reutilizable de skill para un agente.
+Cada participante o pareja debera seleccionar una tarea frecuente de la consultora que hoy demande tiempo, esfuerzo repetitivo o variabilidad innecesaria, y evaluar si conviene convertirla en una `agent skill`, en una especificacion reutilizable de skill para un agente, o si corresponde documentar una recomendacion fundada de no proceduralizarla.
 
-La skill debera:
+La propuesta resultante debera:
 
 - resolver una necesidad clara;
 - tener un usuario objetivo definido;
 - incluir instrucciones, contexto, criterios de calidad y restricciones;
 - ser probada al menos en un caso realista;
-- quedar documentada para que otra persona pueda entender cuando y como usarla.
+- dejar explicitado que revision humana sigue siendo necesaria;
+- quedar documentada para que otra persona pueda entender cuando y como usarla, y tambien cuando no usarla.
 
 ### Foco recomendado
 
-La actividad no busca producir "demos llamativas", sino habilidades transferibles al trabajo cotidiano. Conviene orientar la seleccion hacia tareas de alto valor practico, por ejemplo:
+La actividad no busca producir "demos llamativas", sino habilidades transferibles al trabajo cotidiano. Conviene orientar la seleccion hacia tareas de alto valor practico y bajo riesgo relativo para una primera exploracion, por ejemplo:
 
 - convertir notas de discovery en historias de usuario mejor estructuradas;
 - preparar un primer borrador de plan de testing a partir de requerimientos;
@@ -111,7 +112,7 @@ La actividad no busca producir "demos llamativas", sino habilidades transferible
 - Duracion: 1 semana.
 - Formato: individual o en parejas.
 - Dedicacion estimada: entre 4 y 6 horas distribuidas durante la semana.
-- Acompanamiento: un canal asincronico para consultas y una breve instancia sincrona intermedia o final.
+- Acompanamiento: un canal asincronico para consultas, una breve instancia sincrona intermedia o final y, si el formato lo permite, una revision diferida posterior para observar transferencia real.
 
 ## 8. Secuencia sugerida de la semana
 
@@ -124,8 +125,10 @@ Actividades:
 
 - presentacion breve de la consigna;
 - seleccion del proceso o microtarea;
+- diagnostico contextual inicial: quien usaria la skill, en que pais o equipo, con que restricciones, con que datos, con que riesgos y con que nivel de autonomia;
 - formulacion del problema: que duele hoy, para quien, con que frecuencia, con que costo;
-- definicion de criterio de exito.
+- definicion de criterio de exito;
+- primera decision: conviene convertir esta practica en skill o conviene conservarla principalmente como practica humana guiada?
 
 Producto esperado:
 una ficha breve del caso elegido.
@@ -138,13 +141,15 @@ explicitar el conocimiento de trabajo que suele estar disperso o implicito.
 Actividades:
 
 - describir el usuario objetivo;
+- describir el contexto real de implementacion;
 - definir entradas y salidas esperadas;
 - redactar instrucciones;
 - incluir restricciones, tono, formato y criterios de calidad;
-- anticipar errores frecuentes o malas interpretaciones del agente.
+- anticipar errores frecuentes o malas interpretaciones del agente;
+- explicitar controles humanos obligatorios y escenarios en los que la skill no deberia usarse.
 
 Producto esperado:
-primer borrador de la skill.
+primer borrador de la skill o de la recomendacion fundada de no skillificar la tarea.
 
 ### Dias 4 y 5. Prueba e iteracion
 
@@ -156,7 +161,9 @@ Actividades:
 - probar la skill con uno o mas casos;
 - registrar resultados observados;
 - identificar fallas, ambiguedades o alucinaciones;
-- ajustar instrucciones, estructura o controles humanos.
+- analizar al menos un caso fallido, riesgoso o enganiosamente plausible;
+- ajustar instrucciones, estructura o controles humanos;
+- registrar que saberes tacitos se pierden, se transforman o siguen dependiendo de juicio profesional.
 
 Producto esperado:
 version iterada de la skill y evidencia breve de prueba.
@@ -170,10 +177,25 @@ Actividades:
 
 - redactar una sintesis del valor de la skill;
 - explicar limites, riesgos y condiciones de uso;
+- justificar la decision final: skillificar, no skillificar o dejar la tarea bajo un esquema mixto;
 - compartir el caso en una instancia breve de muestra o repositorio comun.
 
 Producto esperado:
 entrega final documentada.
+
+### Seguimiento sugerido dos semanas despues
+
+Objetivo:
+observar transferencia real y no solo calidad del producto inicial.
+
+Actividades:
+
+- revisar si la skill fue usada, modificada, descartada o reemplazada por otra solucion;
+- registrar que problemas aparecieron en el uso real;
+- discutir si la formalizacion ayudo, simplifico en exceso o invisibilizo conocimiento profesional importante.
+
+Producto esperado:
+nota breve de seguimiento o retroalimentacion diferida.
 
 ## 9. Entregables
 
@@ -188,8 +210,9 @@ Cada participante o pareja entrega un unico documento en Markdown o un conjunto 
 7. Salida esperada.
 8. Criterios de calidad.
 9. Riesgos, limites y controles humanos necesarios.
-10. Evidencia breve de una prueba.
-11. Reflexion final: que aprendimos sobre la tarea, sobre la IA y sobre la organizacion del trabajo.
+10. Escenarios donde la skill no deberia usarse o donde conviene no skillificar la tarea.
+11. Evidencia breve de una prueba, incluyendo al menos un caso fallido o riesgoso.
+12. Reflexion final: que aprendimos sobre la tarea, sobre la IA, sobre la organizacion del trabajo y sobre lo que no conviene proceduralizar.
 
 ## 10. Criterios de evaluacion
 
@@ -202,6 +225,14 @@ Se sugiere una evaluacion formativa con rubrica simple. Los criterios pueden pon
 - Criterio profesional: se reconocen limites, riesgos y necesidad de supervision humana.
 - Transferencia: la skill podria ser utilizada o adaptada por otras personas o equipos.
 
+Indicadores observables sugeridos:
+
+- identifica al menos un escenario donde conviene no usar la skill;
+- documenta una falla encontrada y el ajuste realizado;
+- explicita que revision humana sigue siendo obligatoria;
+- justifica por que la tarea elegida es pertinente para perfiles tecnicos, no tecnicos o mixtos;
+- describe el contexto real de implementacion con suficiente detalle para evitar soluciones genericas.
+
 ## 11. Rol de facilitacion
 
 El equipo facilitador no necesita intervenir como "experto que corrige todo", sino como quien ayuda a formular mejores preguntas, delimitar mejor los casos y sostener criterios de calidad.
@@ -209,8 +240,10 @@ El equipo facilitador no necesita intervenir como "experto que corrige todo", si
 Funciones clave de facilitacion:
 
 - ayudar a elegir tareas ni demasiado amplias ni demasiado triviales;
+- ayudar a distinguir entre tareas realmente skillificables y tareas que requieren mas mediacion humana;
 - recordar que una buena skill no reemplaza juicio profesional, sino que lo apoya;
 - promover iteraciones cortas en lugar de largas redacciones iniciales;
+- intervenir cuando los perfiles tecnicos y no tecnicos queden desbalanceados en participacion o comprension;
 - orientar la reflexion sobre sesgos, errores y control humano;
 - recuperar aprendizajes transversales al cierre.
 
@@ -228,6 +261,9 @@ Funciones clave de facilitacion:
 - Riesgo: que se invisibilicen limites de privacidad, propiedad intelectual o errores de la IA.
   Mitigacion: incluir explicitamente una seccion de riesgos y controles humanos.
 
+- Riesgo: que se naturalice la idea de que toda practica valiosa debe convertirse en skill reutilizable.
+  Mitigacion: pedir una justificacion explicita de por que conviene skillificar la tarea elegida y habilitar como resultado valido una recomendacion fundada de no proceduralizar.
+
 ## 13. Valor organizacional de la actividad
 
 Ademas de su valor formativo, esta actividad puede dejar capacidad instalada en la organizacion. Si las entregas se sistematizan en un repositorio comun, la empresa no solo capacita personas: comienza a construir una biblioteca de skills, casos de uso y criterios compartidos para el trabajo con IA.
@@ -240,7 +276,7 @@ Esto tiene al menos tres efectos estrategicos:
 
 ## 14. Variante sugerida para mayor impacto
 
-Si se quiere aumentar el componente colaborativo, puede agregarse una segunda fase optativa: que cada equipo pruebe la skill creada por otro equipo y deje retroalimentacion sobre claridad, utilidad y facilidad de adopcion. Esta variante fortalece la documentacion, la usabilidad y la idea de skill como capacidad compartida, no solo como experimento individual.
+Si se quiere aumentar el componente colaborativo, puede agregarse una segunda fase optativa: que cada equipo pruebe la skill creada por otro equipo y deje retroalimentacion sobre claridad, utilidad, facilidad de adopcion y riesgos de uso. Esta variante fortalece la documentacion, la usabilidad y la idea de skill como capacidad compartida, no solo como experimento individual.
 
 ## 15. Plantilla base para la entrega de participantes
 
@@ -267,9 +303,13 @@ Si se quiere aumentar el componente colaborativo, puede agregarse una segunda fa
 
 ## 10. Evidencia de prueba
 
-## 11. Aprendizajes y mejoras futuras
+## 11. Escenarios donde no deberia usarse
+
+## 12. Aprendizajes y mejoras futuras
 ```
 
 ## 16. Cierre
 
 La fortaleza de esta actividad es que combina alfabetizacion en IA, mejora de procesos y produccion de conocimiento organizacional. Pedagogicamente, resulta valiosa porque no separa aprender de hacer, ni innovacion de reflexion critica. En una consultora de software, esa articulacion es especialmente potente: permite formar criterio, no solo entusiasmo; practica util, no solo discurso sobre IA.
+
+Su mejora mas importante en esta version es que no da por supuesto que toda buena practica deba terminar convertida en skill. Eso vuelve la propuesta mas situada, mas critica y mas consistente con una adopcion responsable de IA en contextos de trabajo heterogeneos.
